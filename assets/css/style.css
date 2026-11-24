@@ -1,0 +1,1303 @@
+@charset "UTF-8";
+
+/*=====================
+common*/
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:
+        Noto Sans JP,
+        Arial,
+        sans-serif;
+
+    font-weight: 400;
+    color: #383838;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+    text-indent: 0.04em;
+
+    background-color: #F7F7F7;
+
+}
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+address {
+    font-style: normal;
+}
+
+
+/*common
+  =====================*/
+
+
+/*=====================
+header*/
+
+h1 img {
+    display: block;
+}
+
+.header {
+    position: fixed;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-logo__container {
+    margin-left: 40px;
+}
+
+.header-logo{
+    height: 64px;
+    width: 100%;
+}
+
+.nav__list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    font-family: Nunito Sans;
+    font-size: 1.6rem;
+    font-weight: 600;
+    gap: 20px;
+}
+
+
+.header_entry-btn {
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(135deg, #c2a169 50%, #9b7c49 100%);
+}
+
+.header_entry-btn a {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+}
+
+.header-logo__sp {
+    display: none;
+}
+
+/*header
+  =====================*/
+
+
+
+  /*=====================
+  first-view*/
+
+
+.firstｰview{
+   position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.firstｰview img {
+width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.first-view-copy {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #fff;
+}
+
+.first-view-en {
+    margin: 0 0 20px;
+    font-family: Nunito Sans;
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.first-view-ja {
+    margin: 0;
+    font-size: clamp(1rem, 1.6vw, 1.4rem);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    line-height: 1.8;
+}
+
+
+  /*first-view
+  =====================*/
+
+
+
+/*=====================
+page-title*/
+
+
+
+.page-title {
+    font-family: Nunito Sans;
+    font-size: 64px;
+    color: #b89a65;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1;
+    margin-top: 150px;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+}
+
+.page-subtitle {
+    text-align: center;
+}
+
+.section-title {
+    font-family: Nunito Sans;
+    font-size: 3rem;
+    color: #b89a65;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1;
+    margin-top: 40px;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+}
+
+.section-subtitle {
+    text-align: center;
+}
+
+
+.section-text{
+    text-align: center;
+    letter-spacing: 0.2;
+    margin-top: 20px;
+    
+}
+
+.Job-description {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*page-title
+  =====================*/
+
+
+  /*=====================
+index*/
+
+.index-text_gold{
+ font-size: 1.5rem;
+ color: #b89a65;
+}
+.index-text{
+ font-size: 1.2rem;
+}
+
+.index-text_gold,.index-text{
+text-align: center;
+}
+
+.project-heading-text{
+text-align: center;
+}
+
+
+
+.people-section-intro{
+  text-align: center;
+}
+
+.people-list{
+  display: flex;
+}
+
+.people-card{
+  position: relative;
+}
+
+.people-card-profile{
+  position: absolute;
+top: 50%;
+}
+
+.people-hover-text{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.people-hover-area:hover .people-hover-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/*index
+  =====================*/
+
+
+
+
+
+
+
+  /*=====================
+about*/
+
+
+/*about
+  =====================*/
+
+
+
+/*=====================
+jobs*/
+
+.job-card-wrapper {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+    padding-inline: 20px;
+}
+
+.job-card {
+    width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.job-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.job-card-content {
+    min-height: 220px;
+    /* カード内の高さを統一 */
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card-title {
+    font-family: Nunit Sans;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.job-card-title,
+.job-card-subtitle {
+    display: block;
+    text-align: center;
+}
+
+
+
+.job-card-text {
+    margin-top: 10px;
+}
+
+.job-card-btn {
+    border: 1px solid #b89a65;
+    display: inline-block;
+    width: 100%;
+    padding-block: 5px;
+    text-align: center;
+
+    margin-top: auto;
+}
+
+.jobs-section {
+    position: relative;
+    height: calc(100vh - 66px);
+    margin-top: 66px;
+    width: 100%;
+
+
+    display: flex;
+    align-items: center;
+
+    scroll-margin-top: 66px;
+}
+
+
+
+/* 背景画像 */
+.event-planner  {
+    background-image: url("../images/event-plannner-hero.png");
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.director {
+    background-image: url("../images/director.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.designer {
+    background-image: url("../images/designer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.production {
+    background-image: url("../images/production.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.jobs-section-content {
+    position: relative;
+    z-index: 1;
+
+    margin-left: 6vw;
+}
+
+.jobs-section-title {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 6rem;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-indent: 0.1em;
+    margin: 0;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.jobs-section-subtitle {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+.jobs-section-description {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.jobs-section-copy_wrapper {
+    margin-top: 50px;
+}
+
+.jobs-section-copy {
+    display: inline;
+    background: linear-gradient(#FFF);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    font-size: 2rem;
+    padding: 2px 10px 3px;
+}
+
+.jobs-section-copy: .jobs-section-list-wrapper {
+    background-color: #FFF;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.jobs-section-list-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.jobs-section-list {
+    list-style: disc;
+    padding-left: 2em;
+    font-size: 1.1rem;
+    margin-top: 20px;
+
+}
+
+.jobs-section-item {
+    margin-bottom: 5px;
+}
+
+.jobs-section-list-wrapper img {
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+    height: 130px;
+    /* 好きな高さ */
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.jobs-section-text_gold {
+    color: #b89a65;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.schedule-section {
+  padding: 45px 0 63px;
+}
+
+
+/* =====================
+   スケジュール本体
+===================== */
+
+.schedule-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.schedule-title {
+  margin: 0 0 45px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+
+/* =====================
+   各スケジュール
+===================== */
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+
+.schedule-item {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  column-gap: 35px;
+}
+
+
+/* 時間 */
+
+.schedule-time {
+  text-align: left;
+  font-size: 1.4rem;
+  color: #9b7448;
+
+}
+
+
+/* 内容 */
+
+.schedule-content h3 {
+  margin: 0 0 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+
+.schedule-content p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+/* =====================
+   下のメッセージ
+===================== */
+
+.schedule-message {
+  max-width: 1125px;
+  margin: 95px auto 0;
+  padding: 26px 20px;
+  background-color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+}
+
+
+.schedule-message p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+
+/*jobs
+  =====================*/
+
+
+/*=====================
+recruit*/
+
+/* タブ全体 */
+.recruit-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* タブ */
+.recruit-tab {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #c09a5a;
+    border-bottom: none;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    text-indent: 0.1em;
+}
+
+/* 選択中のタブ */
+.recruit-tab.is-active {
+    background-color: #c09a5a;
+    color: #fff;
+}
+
+
+/* コンテンツは最初隠す */
+.recruit-content {
+    display: none;
+}
+
+/* 選択されているものだけ表示 */
+.recruit-content.is-active {
+    display: block;
+}
+
+.recruit-table_background {
+    background-color: #FFF;
+    border: 1px solid #b89a65;
+    margin-bottom: 100px;
+    margin: 0 auto 100px;
+    width: 85%;
+}
+
+.recruit-table {
+    margin: 50px auto;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.recruit-table th {
+    background-color: #F7F7F7;
+}
+
+/* 行の上下 */
+.recruit-table th,
+.recruit-table td {
+    border-top: 1px solid #b89a65;
+    border-bottom: 1px solid #b89a65;
+}
+
+/* 左端 */
+.recruit-table th {
+    border-left: 1px solid #b89a65;
+    padding-inline: 10px;
+}
+
+/* 右端 */
+.recruit-table td {
+    border-right: 1px solid #b89a65;
+    padding: 10px;
+}
+
+.graduate-table th {
+    padding-inline: 20px;
+}
+
+
+
+
+.flow-contents {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  padding: 20px 40px 30px;
+}
+
+.flow-item {
+  flex: 1;
+  min-width: 0;
+}
+
+.flow-number {
+  margin: 0;
+  text-align: center;
+
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.3em;
+  color: #b69a67;
+}
+
+.flow-contents-title {
+  margin-block: 15px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+.flow-contents-text {
+  margin: 0;
+
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.12em;
+}
+
+
+
+/*recruit
+  =====================*/
+
+/*=====================
+entry*/
+
+/* =========================
+   ENTRY FORM
+========================= */
+
+.entry-form {
+    max-width: 900px;
+    margin: 100px auto;
+    font-size: 1.2rem;
+}
+
+/* 1行 */
+.form-row {
+    display: grid;
+    grid-template-columns: 185px 1fr;
+
+    border-top: 1px solid #cecece;
+    min-height: 80px;
+}
+
+
+/* 最後の境界線 */
+
+.form-row:last-of-type {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* 左側 */
+
+.form-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+
+    border-right: 1px solid #eeeeee;
+
+    font-weight: 600;
+}
+
+
+/* 右側 */
+
+.form-content {
+    display: flex;
+    align-items: center;
+
+    padding: 16px 24px;
+}
+
+
+/* =========================
+   必須・任意
+========================= */
+
+.required,
+.optional {
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 8px 3px;
+    font-weight: 500;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+
+.required {
+    background: #b99a78;
+    color: #fff;
+}
+
+
+.optional {
+    background: #f3f3f3;
+    color: #777;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.form-content input[type="text"],
+.form-content input[type="email"],
+.form-content input[type="tel"],
+.form-content select {
+    width: 350px;
+    height: 38px;
+
+    padding: 0 12px;
+
+    border: 1px solid #dddddd;
+
+    background: #fff;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+}
+
+
+.form-content input::placeholder,
+.form-content textarea::placeholder {
+    color: #888;
+}
+
+
+/* =========================
+   希望職種
+========================= */
+
+.job-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+
+.job-type label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.job-type input[type="radio"] {
+    width: 16px;
+    height: 16px;
+}
+
+
+.other-job input[type="text"] {
+    width: 200px;
+}
+
+
+/* =========================
+   生年月日
+========================= */
+
+.birthday {
+    gap: 8px;
+}
+
+
+.birthday select {
+    width: 90px;
+}
+
+
+/* =========================
+   住所
+========================= */
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+
+.address select {
+    width: 190px;
+}
+
+
+.address input {
+    width: 100%;
+    max-width: 380px;
+}
+
+
+/* =========================
+   現在の状況
+========================= */
+
+.radio-list {
+    gap: 38px;
+}
+
+
+.radio-list label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    white-space: nowrap;
+}
+
+
+.radio-list input {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* =========================
+   ファイル
+========================= */
+
+.file-area {
+    display: block;
+}
+
+
+.file-button {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 8px 14px;
+
+    background: #eeeeee;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+.file-name {
+    margin-left: 12px;
+
+    font-size: 14px;
+}
+
+
+.file-area p {
+    margin: 10px 0 0;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.textarea-row {
+    min-height: 170px;
+}
+
+
+.textarea-row .form-content {
+    display: block;
+}
+
+
+textarea {
+    width: 100%;
+    height: 110px;
+
+    padding: 14px;
+
+    border: 1px solid #dddddd;
+
+    resize: vertical;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    box-sizing: border-box;
+}
+
+
+.count {
+    margin: 0;
+
+    text-align: right;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   PRIVACY
+========================= */
+
+.privacy {
+    margin: 35px 0;
+
+    text-align: center;
+}
+
+
+.privacy p {
+    margin-bottom: 18px;
+}
+
+
+.privacy a {
+    color: #9c7d5d;
+
+    text-decoration: underline;
+}
+
+
+.privacy label {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.submit-button {
+    display: block;
+
+    width: min(420px, 100%);
+    height: 62px;
+
+    margin: 0 auto;
+
+    border: none;
+
+    background: #b69a67;
+    color: #fff;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: opacity 0.3s;
+}
+
+
+.submit-button:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+
+    .form-row {
+        display: block;
+    }
+
+
+    .form-label {
+        padding: 15px;
+
+        border-right: none;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+
+    .form-content {
+        padding: 20px 15px;
+    }
+
+
+    .form-content input[type="text"],
+    .form-content input[type="email"],
+    .form-content input[type="tel"],
+    .form-content select {
+        width: 100%;
+    }
+
+
+    .birthday {
+        flex-wrap: wrap;
+    }
+
+
+    .birthday select {
+        width: calc(33.333% - 10px);
+    }
+
+
+    .radio-list {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+
+    .other-job {
+        flex-wrap: wrap;
+    }
+
+
+    .other-job input[type="text"] {
+        width: 100%;
+    }
+
+}
+
+/*entry
+  =====================*/
+
+
+
+
+
+
+
+
+/*=====================
+footer*/
+
+.footer {
+    padding-block: 30px 0;
+    padding-inline: clamp(24px, 5vw, 100px);
+    color: #FFF;
+}
+
+.bg-grn {
+    background-color: #b89a65;
+}
+
+.footer__nav-list {
+    display: flex;
+    gap: 20px;
+
+    border-bottom: solid 1px #FFF;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footer__nav-item {
+    font-size: 1.2rem;
+}
+
+.recruit__btn {
+    position: relative;
+    border: 1px solid #fff;
+}
+
+.recruit__btn a {
+    display: flex;
+    align-items: center;
+    padding: 0 35px 0 10px;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__copy {
+    display: block;
+    font-family: GFS Didot;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: auto 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__address {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: solid 1px #FFF;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer__address-title {
+    font-size: 1.1rem;
+    line-height: 1.25;
+}
+
+
+.footer__address-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__address-icon {
+    align-self: flex-start;
+}
+
+.map-icon {
+    width: 15px;
+}
+
+.mail-icon {
+    width: 18px;
+}
+
+.tel-icon {
+    width: 17px;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 726px) {
+    .footer__copy {
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+/*footer
+=====================*/
+
+
+
+
+#wrap_curtain::before,#wrap_curtain::after{
+  position: fixed;
+  z-index: 10000;
+  top: -15%;
+  display: block;
+  visibility: hidden;
+  width: 50%;
+  height: 130%;
+  content: '';
+  background-color: #ceb37f;
+}
+#wrap_curtain::before{
+  left: 0;
+  animation : curtain_l 3s;
+　-webkit-animation : curtain_l 3s;
+}
+#wrap_curtain::after{
+  right: 0;
+  animation : curtain_r 3s;
+　-webkit-animation : curtain_r 3s;
+}
+
+@keyframes curtain_l{
+  0%{visibility: visible;}
+  20%{transform: rotate(0deg) translateX(0%); background-color: #ceb37f;}
+  60%{transform: rotate(6deg) translateX(-50%);}
+  80%{opacity: 1;}
+  100%{transform: rotate(0deg) translateX(-100%); opacity:0; visibility: hidden;}
+}
+@-webkit-keyframes curtain_l{
+  0%{visibility: visible;}
+  20%{-webkit-transform: rotate(0deg) translateX(0%); background-color: #ceb37f;}
+  60%{-webkit-transform: rotate(6deg) translateX(-50%);}
+  80%{opacity: 1;}
+  100%{-webkit-transform: rotate(0deg) translateX(-100%); opacity:0; visibility: hidden;}
+}
+@keyframes curtain_r{
+  0%{ visibility: visible;}
+  20%{transform: rotate(0deg) translateX(0%); background-color: #ceb37f;}
+  60%{transform: rotate(-6deg) translateX(50%);}
+  80%{opacity: 1;}
+  100%{transform: rotate(0deg) translateX(100%); opacity:0; visibility: hidden;}
+}
+@-webkit-keyframes curtain_r{
+  0%{visibility: visible;}
+  20%{-webkit-transform: rotate(0deg) translateX(0%); background-color: #ceb37f;}
+  60%{-webkit-transform: rotate(-6deg) translateX(50%);}
+  80%{opacity: 1;}
+  100%{-webkit-transform: rotate(0deg) translateX(100%); opacity:0; visibility: hidden;}
+}
